@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Proposal</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Sky Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #proposal-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  #yes, #no {
+    font-size: 24px;
+    padding: 15px 30px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+  #yes:hover, #no:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+
+  #yes {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  #no {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+
+  #response {
+    display: none;
+    color: #333;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+  <div id="proposal-container">
+    <h1>Would you mind if I love you and date you from now till death?</h1>
+    <p>Look iss baar majjak nhi kr raha this is real this time..</p>
+    <button id="yes" onclick="showResponse('yes')">Yes</button>
+    <button id="no" onclick="showResponse('no')">No</button>
+    <p id="response"></p>
+  </div>
+
+  <script>
+    function showResponse(answer) {
+      var responseParagraph = document.getElementById("response");
+      if (answer === 'yes') {
+        responseParagraph.innerHTML = "That's wonderful! I promise to cherish every moment with you. And please jaake likh do yeh apni chat pr😁 ki tumne haa kia hai....";
+      } else {
+        responseParagraph.innerHTML = "Yrr chlo koi n i respect your decision thanks for responding..";
+      }
+      responseParagraph.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
